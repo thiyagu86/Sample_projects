@@ -108,9 +108,6 @@ bool readElem(ListType type,ElemType eltype)
 
 bool addNodetoListBack(ListType type, int data)
 {
-	node *listhead = NULL;
-	node *listtail = NULL;
-
 	node *newNode = (node*)malloc(sizeof(node));
 	newNode->data = data;
 	newNode->pNext = NULL;
@@ -206,26 +203,26 @@ int main()
 				cout << "3. To print tail of the list" << endl;
 				cin >> SecInput;
 				if(SecInput == 1 || SecInput == 2 || SecInput == 3)
-		                {
-		                    switch(SecInput)
-				    {
-			            case 1:
+		    {
+		      switch(SecInput)
+				  {
+			      case 1:
 					    printList(ListType::EVEN);
-			                    break;
-			            case 2:
+			        break;
+			      case 2:
 					    readElem(ListType::EVEN,ElemType::HEAD);
 					    break;
-			            case 3:
+			      case 3:
 					    readElem(ListType::EVEN,ElemType::TAIL);
 					    break;
-				    }
+				  }
 				}
 				else
 				{
 					cout << "Wrong input provided" << endl;
 				}
 			}
-		        break;
+		  break;
 			case 2:
 			{
 				int SecInput;
@@ -235,55 +232,55 @@ int main()
 				cout << "3. To print tail of the list" << endl;
 				cin >> SecInput;
 				if(SecInput == 1 || SecInput == 2 || SecInput == 3)
-		                {
-		                    switch(SecInput)
-				    {
-			            case 1:
+		    {
+		      switch(SecInput)
+				  {
+			      case 1:
 					    printList(ListType::ODD);
-			                    break;
-			            case 2:
+			        break;
+			      case 2:
 					    readElem(ListType::ODD,ElemType::HEAD);
 					    break;
-			            case 3:
+			      case 3:
 					    readElem(ListType::ODD,ElemType::TAIL);
 					    break;
-				    }
+				  }
 				}
 				else
 				{
 					cout << "Wrong input provided" << endl;
 				}
 			}
-				break;
+		  break;
 			case 3:
 			{
-			        int SecInput;
+			  int SecInput;
 				cout << "Select the item from Menu: " << endl;
 				cout << "1. To print all elems" << endl;
 				cout << "2. To print head of the list" << endl;
 				cout << "3. To print tail of the list" << endl;
 				cin >> SecInput;
 				if(SecInput == 1 || SecInput == 2 || SecInput == 3)
-		                {
-		                    switch(SecInput)
-				    {
-			            case 1:
+		    {
+		      switch(SecInput)
+				  {
+			      case 1:
 					    printList(ListType::MULTIPLE);
-			                    break;
-			            case 2:
+			        break;
+			      case 2:
 					    readElem(ListType::MULTIPLE,ElemType::HEAD);
 					    break;
-			            case 3:
+			      case 3:
 					    readElem(ListType::MULTIPLE,ElemType::TAIL);
 					    break;
-				    }
+				  }
 				}
 				else
 				{
 					cout << "Wrong input provided" << endl;
 				}
 			}
-				break;
+		  break;
 			default:
 				break;
 			}
